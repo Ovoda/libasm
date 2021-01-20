@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 14:32:16 by calide-n          #+#    #+#             */
-/*   Updated: 2021/01/20 19:12:07 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/01/20 19:31:21 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strdup(const char *s1);
 ssize_t		ft_write(int fildes, const void *buf, size_t nbytes);
 ssize_t		ft_read(int fildes, void *buf, size_t nbytes);
-int			ft_list_size(t_list *list);
 
 #endif
