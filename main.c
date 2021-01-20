@@ -64,9 +64,6 @@ void	ft_putnbr(int nb)
 
 int main(int argc, char **argv)
 {
-	printf("%d\n", ft_strcmp(argv[1], argv[2]));
-	return (0);
-
 	if (argc != 2)
 	{
 		printf("\033[1mWrong input\n");
