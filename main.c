@@ -88,7 +88,7 @@ int main(int argc, char **argv)
 		char *info = ft_strdup("Now reading from stdin (ft_read).\nEnter a string, it will be compared with your first string (ft_strcmp).\nThe output of ft_strcmp will be printed with ft_write.\n(Enter exit to close the program)\n");
 		ft_write(1, info, ft_strlen(info));
 		char *arg = strjoin(argv[1], "\n");
-		while ((ret = read(0, &line, 1024)) > 0)
+		while ((ret = ft_read(0, &line, 1024)) > 0)
 		{
 			line[ret] = 0;
 			i = ft_strcmp(line, arg);
