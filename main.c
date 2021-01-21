@@ -80,6 +80,7 @@ int main(int argc, char **argv)
 		printf("Reseting copy... \n	CPY : [%p] %s\n", dst, dst);
 		dst = ft_strcpy(dst, argv[1]);
 		printf("ft_strcpy\n	CPY : [%p] %s\n", dst, dst);
+		free(dst);
 
 		char line[1024];
 		int i;
