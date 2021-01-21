@@ -10,8 +10,14 @@ ft_strdup:
 	mov rdi, rax
 	inc rdi
 	call malloc
+	cmp rax, 0
+	jz end_error
 	mov rdi, rax
 	pop rsi
 	call ft_strcpy
+	jmp end
+
+end_error:
+	pop rdi
 end:
 	ret
